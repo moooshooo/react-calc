@@ -9,8 +9,12 @@ function App() {
   const [funOp, setFunOp] = useState("")
   const [showResults, setShowResults] = useState("")
 
-/*   //Denna ska visa display
-  const [display, showOnDisplay] = useState("") */
+  /*
+  //Denna ska visa display
+  const [display, showOnDisplay] = useState("") 
+  */
+
+  //Dessa funktioner fångar värde i bägge input fält
 
   const input1 = (e) => setValue1(e.target.value)
   const input2 = (e) => setValue2(e.target.value)
@@ -55,6 +59,25 @@ function App() {
   return (
     <>
       <div id="calcH">
+        <div id="display">
+
+        </div>
+        <div id="btnH">
+          <button onClick={btnNr}></button>
+        </div>
+      </div>
+      
+      <div className="buttons">
+        {["7","8","9","/","4","5","6","*","1","2","3","-","0",".","+"].
+          map((btn) => (
+            <button key={btn} onClick={() => handleClick(btn)}>{btn}</button>
+        ))}
+        <button onClick={clear}>C</button>
+        <button onClick={calculate}>=</button>
+      </div>
+      
+      
+      <div >
         <div>
           <input type='number' value={value1} onChange={input1} />
         </div>
