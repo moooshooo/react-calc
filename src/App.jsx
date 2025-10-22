@@ -58,15 +58,15 @@ function App() {
 
   return (
     <>
-      <div id="calcH">
+     {/*  <div id="calcH">
         <div id="display">
 
         </div>
         <div id="btnH">
           <button onClick={btnNr}></button>
         </div>
-      </div>
-      
+      </div> */}
+      {/* 
       <div className="buttons">
         {["7","8","9","/","4","5","6","*","1","2","3","-","0",".","+"].
           map((btn) => (
@@ -75,7 +75,7 @@ function App() {
         <button onClick={clear}>C</button>
         <button onClick={calculate}>=</button>
       </div>
-      
+       */}
       
       <div >
         <div>
